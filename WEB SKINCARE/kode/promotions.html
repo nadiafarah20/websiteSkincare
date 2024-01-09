@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Skincare Online Shop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px;
+            background-color: #f8bbd0;
+            margin-bottom: 100px; /* Adjusted margin to make space for the cart section */
+        }
+
+        .navbar {
+            background-color: #f06292;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item.active .nav-link {
+            color: #ad1457;
+        }
+
+        .navbar-nav .dropdown-menu {
+            background-color: #f06292;
+        }
+
+        .navbar-nav .dropdown-item {
+            color: #fff;
+        }
+
+        .navbar-nav .dropdown-item:hover {
+            background-color: #ad1457;
+        }
+
+        .jumbotron {
+            background-color: #f06292;
+            color: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #f06292;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        #cart-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #cart-container h2 {
+            color: #f06292;
+        }
+
+        #checkout-btn {
+            margin-top: 10px;
+            background-color: green;
+        }
+
+        footer {
+            background-color: #f06292;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            /* Position fixed to the bottom */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">SkinGlow</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../navbar.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promotions.html">Promotions</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav> <br>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Current Promotions</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="../foto/avoskin.jpg" height="560px" "card-img-top img-fluid mx-auto" alt="Avoskin">
+                    <div class="card-body">
+                        <h5 class="card-title">Avoskin Your Skin Bae Alpha Arbutin 3%</h5>
+                        <p class="card-text">
+                            Salah satu best seller serum Avoskin dari Your Skin Bae series yang memadukan active ingredient Alpha Arbutin 3% dan ekstrak natural Grapeseed untuk mencerahkan kulit, menyamarkan noda bekas jerawat kehitaman (PIH), dan menyamarkan tampilan pori-pori. Alpha Arbutin merupakan salah brightening agent yang efektif untuk kulit. Sedangkan Grapeseed mengandung antioksidan untuk menjaga sel kulit tetap sehat dan terawat.
+                        </p>
+                        <p class="card-price-discount"><del>Rp. 200.000</del></p>
+                        <p class="card-price">Rp. 150.000</p>
+                        <a href="#" class="btn btn-primary add-to-cart" data-productname="Promotion 1" data-price="15000">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tambahkan promotion cards lainnya di sini -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="../foto/toner.jpg" class="card-img-top img-fluid mx-auto" alt="Npure">
+                    <div class="card-body">
+                        <h5 class="card-title">NPURE Centella Asiatica Face Toner</h5>
+                        <p class="card-text">
+                            Membantu Membersihkan wajah dari sisa kotoran, menyeimbangkan PH wajah, mencerahkan kulit wajah, merawat kulit berjerawat serta membuat kulit terasa segar. menggabungkan antara Granactive Acne Peptide, Centella Asiatica Extract, 7 Anti-Acne Plant Extracts, dan Salicylic Acid untuk merawat kulit berjerawat, memberikan kelembaban pada kulit wajah, memberikan efek soothing, meredakan kemerahan atau kulit yang sedang iritasi, dan melembutkan kulit wajah.
+                        </p>
+                        <p class="card-price-discount"><del>Rp. 250.000</del></p>
+                        <p class="card-price">Rp. 180.000</p>
+                        <a href="#" class="btn btn-primary add-to-cart" data-productname="Promotion 2" data-price="18000">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cart-container" class="container">
+        <h2>Your Cart</h2>
+        <ul id="cart-items" class="list-group"></ul>
+        <p>Total Items: <span id="total-items">0</span></p>
+        <p>Total: <span id="cart-total">Rp. 0</span></p>
+        <button id="checkout-btn" class="btn btn-success">Checkout</button>
+    </div>
+
+    <!-- Modal Checkout -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Pesanan Diterima</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Terima kasih atas pesanan Anda! Pesanan Anda sedang diproses.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden div to hold the cart items -->
+    <div id="cart-items-container" style="display: none;"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Skincare Shop. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Cart script -->
+    <script src="cart.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+            const totalItemsElement = document.getElementById('total-items');
+            const checkoutBtn = document.getElementById('checkout-btn');
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const productName = this.getAttribute('data-productname');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    addToCart(productName, price);
+                    updateCart();
+                });
+            });
+
+            checkoutBtn.addEventListener('click', function () {
+                const cartItems = getCartItems();
+                if (cartItems.length > 0) {
+                    showNotificationModal();
+                    clearCart();
+                    updateCart();
+                } else {
+                    alert('Keranjang belanja masih kosong. Silakan tambahkan barang ke dalam keranjang sebelum checkout.');
+                }
+            });
+
+            function showNotificationModal() {
+                $('#checkoutModal').modal('show');
+            }
+
+            function addToCart(productName, price) {
+                const cartItems = getCartItems();
+                cartItems.push({ productName, price });
+                localStorage.setItem('cart', JSON.stringify(cartItems));
+            }
+
+            function updateCart() {
+                const cartItems = getCartItems();
+                let total = 0;
+
+                // Update cart items
+                cartItemsContainer.innerHTML = '';
+                cartItems.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${item.productName} - Rp.${item.price.toFixed(2)}`;
+                    cartItemsContainer.appendChild(listItem);
+                    total += item.price;
+                });
+
+                // Update total amount
+                cartTotalElement.textContent = `Rp.${total.toFixed(2)}`;
+                totalItemsElement.textContent = cartItems.length;
+            }
+
+            function clearCart() {
+                localStorage.removeItem('cart');
+            }
+
+            function getCartItems() {
+                return JSON.parse(localStorage.getItem('cart')) || [];
+            }
+
+            // Initial cart update on page load
+            updateCart();
+        });
+    </script>
+</body>
+
+</html>

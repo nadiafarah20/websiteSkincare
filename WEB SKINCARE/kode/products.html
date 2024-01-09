@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Skincare Online Shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 56px;
+            background-color: #f8bbd0;
+            margin-bottom: 100px; /* Adjusted margin to make space for the cart section */
+        }
+
+        .navbar {
+            background-color: #f06292;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item.active .nav-link {
+            color: #ad1457;
+        }
+
+        .navbar-nav .dropdown-menu {
+            background-color: #f06292;
+        }
+
+        .navbar-nav .dropdown-item {
+            color: #fff;
+        }
+
+        .navbar-nav .dropdown-item:hover {
+            background-color: #ad1457;
+        }
+
+        .jumbotron {
+            background-color: #f06292;
+            color: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #f06292;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 100%;
+            height: 200px; /* Adjusted height for uniformity */
+            object-fit: cover; /* Ensures the image covers the entire container */
+        }
+
+        #cart-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        #cart-container h2 {
+            color: #f06292;
+        }
+
+        #checkout-btn {
+            margin-top: 10px;
+            background-color: green; /* Added background color for better visibility */
+            border: none;
+        }
+
+        #cart-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        #cart-items li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: #f06292;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">SkinGlow</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../navbar.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promotions.html">Promotions</a>
+                </li>
+            </ul>
+            <!-- Add a search bar -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav> <br>
+
+    <!-- Produk Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../foto/Somethinc Diamond Phyto.jpg" width="300" height="200" "card-img-top" alt="Somethinc">
+                    <h5 class="card-title">Somethinc Diamond Phyto</h5>
+                    <p class="card-text">Vegan serum dengan Real Diamond & Swiss Alps Stem Cells yang dipopulerkan sebagai skincare Serum Syahrini untuk membantu membuat kulit halus bercahaya, mempercepat pembaharuan lapisan kulit, sekaligus melawan tanda penuaan dini seperti kerutan & pori-pori besar.</p>
+                    <p class="card-text"><strong>Harga: Rp. 164.000</strong></p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-productname="Somethinc Diamond Phyto" data-price="164000">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../foto/The Originote.jpg" width="300" height="200" class="card-img-top" alt="Originote">
+                    <h5 class="card-title">The Originote Sunscreen</h5>
+                    <p class="card-text">The Originote Ceramella merupakan sunscreen hybrid dengan SPF 50 PA+++ yang memiliki kandungan 3 jenis Ceramide, Tremella dan Vitamin C yang berfungsi untuk melindungi kulit terhadap efek buruk dari sinar matahari,dan melindungi kulit dari penuaan dini.</p>
+                    <p class="card-text"><strong>Harga: Rp. 40.000</strong></p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-productname="The Originote Sunscreen" data-price="40000">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="../foto/Skintific 5X Ceramide Barrier Moisture Gel.jpg" width="300" height="500" class="card-img-top" alt="Skintific">
+                    <h5 class="card-title">Skintific 5X Ceramide Barrier Moisture Gel</h5>
+                    <p class="card-text">Moisturizer yang menggabungkan 3 kandungan aktif Ceramide, Hyaluronic Acid, dan Centella Asiatica, untuk merawat permasalahan skin barrier seperti jerawat, kemerahan, kulit bertekstur, dan juga kulit kering.</p>
+                    <p class="card-text"><strong>Harga: Rp. 130.000</strong></p>
+                    <button class="btn btn-primary add-to-cart"
+                        data-productname="kintific 5X Ceramide Barrier Moisture Gel" data-price="130000">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cart-container" class="container">
+        <h2>Your Cart</h2>
+        <ul id="cart-items" class="list-group"></ul>
+        <p>Total Items: <span id="total-items">0</span></p>
+        <p>Total: <span id="cart-total">Rp. 0</span></p>
+        <button id="checkout-btn" class="btn btn-success">Checkout</button>
+    </div>
+
+    <!-- Modal Checkout -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Pesanan Diterima</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Terima kasih atas pesanan Anda! Pesanan Anda sedang diproses.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden div to hold the cart items -->
+    <div id="cart-items-container" style="display: none;"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Skincare Shop. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Cart script -->
+    <script src="cart.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartTotalElement = document.getElementById('cart-total');
+            const totalItemsElement = document.getElementById('total-items');
+            const checkoutBtn = document.getElementById('checkout-btn');
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const productName = this.getAttribute('data-productname');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    addToCart(productName, price);
+                    updateCart();
+                });
+            });
+
+            checkoutBtn.addEventListener('click', function () {
+                const cartItems = getCartItems();
+                if (cartItems.length > 0) {
+                    showNotificationModal();
+                    clearCart();
+                    updateCart();
+                } else {
+                    alert('Keranjang belanja masih kosong. Silakan tambahkan barang ke dalam keranjang sebelum checkout.');
+                }
+            });
+
+            function showNotificationModal() {
+                $('#checkoutModal').modal('show');
+            }
+
+            function addToCart(productName, price) {
+                const cartItems = getCartItems();
+                cartItems.push({ productName, price });
+                localStorage.setItem('cart', JSON.stringify(cartItems));
+            }
+
+            function updateCart() {
+                const cartItems = getCartItems();
+                let total = 0;
+
+                // Update cart items
+                cartItemsContainer.innerHTML = '';
+                cartItems.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${item.productName} - Rp.${item.price.toFixed(2)}`;
+                    cartItemsContainer.appendChild(listItem);
+                    total += item.price;
+                });
+
+                // Update total amount
+                cartTotalElement.textContent = `Rp.${total.toFixed(2)}`;
+                totalItemsElement.textContent = cartItems.length;
+            }
+
+            function clearCart() {
+                localStorage.removeItem('cart');
+            }
+
+            function getCartItems() {
+                return JSON.parse(localStorage.getItem('cart')) || [];
+            }
+
+            // Initial cart update on page load
+            updateCart();
+        });
+    </script>
+</body>
+
+</html>
